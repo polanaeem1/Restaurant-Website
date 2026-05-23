@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Inter:wght@300;400;500;600;750&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", "Plus Jakarta Sans", system-ui, sans-serif;
+  
+  --color-cream-100: #fdfbf7;
+  --color-cream-200: #f5f0e5;
+  --color-cream-300: #eadfc9;
+  --color-accent-orange: #d97706;
+  --color-accent-orange-hover: #b45309;
+  --color-deep-red: #991b1b;
+  --color-deep-red-hover: #7f1d1d;
+  --color-luxury-black: #050505;
+  --color-luxury-dark: #0f0f0f;
+  --color-luxury-gray: #1a1a1a;
+}
+
+/* Custom scrollbar for premium feeling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-luxury-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-luxury-gray);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-orange);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-luxury-black);
+  color: var(--color-cream-100);
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Elegant Dark Glassmorphism Class */
+.bg-glass {
+  background: rgba(255, 255, 255, 0.02) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+}
+
+/* Atmospheric Glow Gradients (Exactly from Elegant Dark Design) */
+.atmos-glow {
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.08) 0%, transparent 70%) !important;
+}
+
+.atmos-glow-bottom {
+  background: radial-gradient(circle, rgba(153, 27, 27, 0.06) 0%, transparent 70%) !important;
+}
+
+/* Traditional high-end menu card styling */
+.dish-card-border {
+  border-left: 1px solid rgba(217, 119, 6, 0.3) !important;
+}
+
+/* Fine grain luxury noise/glow overlay utility */
+.luxury-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(217, 119, 6, 0.07) 0%, rgba(153, 27, 27, 0.03) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #fdfbf7 0%, #eadfc9 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
